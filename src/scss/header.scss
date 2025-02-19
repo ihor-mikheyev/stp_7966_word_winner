@@ -1,30 +1,32 @@
 .header {
-  padding: 20px 0;
+  padding: 32px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .nav-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-
-  @include media(tablet) {
-    justify-content: flex-start;
-  }
-
-  @include media(desktop) {
-    justify-content: flex-end;
-  }
+  gap: 30px;
+  background-color: $secondary_bg_color;
+  padding: 10.5px 42.5px;
+  border-radius: 10px;
 }
 
 .nav-link {
-  font-weight: 500;
   letter-spacing: 0.02em;
-  @include font(30, 40);
-  color: $_header_color;
+  @include font(20px, 27.24px);
+  color: $_main_color;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: $_header_accent_color;
+}
+
+.burger {
+  display: none;
 }
