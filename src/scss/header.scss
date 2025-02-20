@@ -51,15 +51,3 @@
   color: $_header_accent_color;
 }
 
-.burger {
-  display: block;
-}
-
-.icon-burger {
-}
-
-@include media(mobile) {
-  .burger {
-    display: none;
-  }
-}
