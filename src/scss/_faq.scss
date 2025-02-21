@@ -1,0 +1,84 @@
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
+.title-faq {
+  font-family: Fredoka;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.faq-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.faq-t {
+  display: flex;
+  gap: 20px;
+}
+
+.faq-c {
+  display: flex;
+  gap: 20px;
+}
+
+/* Style for the accordion label (question) */
+.accordion-label {
+  display: flex;
+  width: 548px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: #f4e5be;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Hover effect for the accordion label */
+// .accordion-label:hover {
+//   background-color: #45a049;
+// }
+
+/* Style for the answer section */
+.panel {
+  display: none;
+  padding: 10px;
+  background-color: #f1f1f1;
+  margin-top: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 548px;
+  background: #f4e5be;
+}
+
+.panel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+/* When the checkbox is checked, display the panel */
+.accordion-toggle:checked + .accordion-label + .panel {
+  display: block;
+}
+.panel-p {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}

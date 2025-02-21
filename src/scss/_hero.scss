@@ -20,13 +20,6 @@
   letter-spacing: 0.03em;
   margin-bottom: 110px;
   line-height: 80px;
-
-  // @include media(desktop) {
-  //   letter-spacing: 0.01em;
-  //   font-size: 80px;
-  //   width: 548px;
-  //   height: 240px;
-  // }
 }
 
 .hero {
@@ -38,6 +31,12 @@
 .hero-button {
   width: 260px;
   margin: 13px 0;
+  border: none;
+  outline: none; /* Це прибирає білу окантовку при фокусі */
+}
+
+.button-google {
+  border: none;
 }
 
 @media screen and (max-width: 375px) {
