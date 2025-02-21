@@ -1,0 +1,51 @@
+.hero-container {
+  @media screen and (min-width: 1200px) {
+    padding: 0 80px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 375px) {
+      padding: 0 40px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.hero-title {
+  display: flex;
+}
+
+.hero-tit {
+  font-family: Fredoka;
+  font-size: 80px;
+  letter-spacing: 0.03em;
+  margin-bottom: 110px;
+  line-height: 80px;
+
+  // @include media(desktop) {
+  //   letter-spacing: 0.01em;
+  //   font-size: 80px;
+  //   width: 548px;
+  //   height: 240px;
+  // }
+}
+
+.hero {
+  display: flex;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-button {
+  width: 260px;
+  margin: 13px 0;
+}
+
+@media screen and (max-width: 375px) {
+  .hero-title {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-tit {
+    font-size: 32px;
+  }
+}

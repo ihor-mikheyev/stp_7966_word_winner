@@ -1,0 +1,29 @@
+@media (min-width: 1200px) {
+  .title-about {
+    font-family: Fredoka;
+    font-size: 40px;
+    font-weight: 600px;
+  }
+  .about {
+    margin-top: 114px;
+  }
+  .about-text {
+    font-size: 24px;
+    font-weight: 400;
+    width: 515px;
+    height: 328px;
+    flex-shrink: 0;
+  }
+  .about-p {
+    font-family: Open Sans;
+    display: flex;
+    width: 548px;
+    height: 360px;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: var(--Fon-for-text-Beige, #f4e5be);
+  }
+}
