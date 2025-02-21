@@ -3,6 +3,7 @@
 @import './swiper.scss';
 @import './burger_menu.scss';
 @import './hero.scss';
+@import './features.scss';
 @import './about-game';
 
 :root {
@@ -25,4 +26,8 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+h2 {
+  margin-bottom: 40px;
 }
