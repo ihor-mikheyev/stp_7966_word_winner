@@ -1,0 +1,24 @@
+.footer {
+  height: 143px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid $_secondary_bg_color;
+}
+.footer-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin-bottom: 18px;
+}
+
+@include media(mobile) {
+  .footer-list {
+    gap: 12px;
+  }
+}
+.footer-link {
+}
+.link {
+}
