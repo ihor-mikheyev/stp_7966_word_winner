@@ -1,53 +1,22 @@
-.faq {
-  margin-top: 140px;
-  margin-bottom: 140px;
-}
-.title-faq {
-  font-family: Fredoka;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
-
 .faq-list {
-  display: flex;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
 }
 
-// .faq-t {
-//   display: flex;
-//   gap: 20px;
-// }
-
-// .faq-c {
-//   display: flex;
-//   gap: 20px;
-// }
-
-/* Style for the accordion label (question) */
 .accordion-label {
   display: flex;
-  width: 100%;
-  // width: 548px;
-  height: 84px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  background: #f4e5be;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
-
   line-height: normal;
   justify-content: space-between;
 }
-
-/* Hover effect for the accordion label */
-// .accordion-label:hover {
-//   background-color: #45a049;
-// }
+.accordion-container {
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--Fon-for-text-Beige, #f4e5be);
+}
 
 /* Style for the answer section */
 .panel {
@@ -57,7 +26,7 @@
   margin-top: 5px;
   border-radius: 5px;
   overflow: hidden;
-  width: 548px;
+  width: 100%;
   background: #f4e5be;
 }
 
@@ -88,17 +57,24 @@
   transform: rotate(180deg);
 }
 @media screen and (max-width: 375px) {
-  .accordion-label {
-    width: 100%;
-    height: 49px;
-    font-size: 16px;
-    justify-content: space-between;
-  }
-  .faq {
-    width: 375px;
-    margin: 0 auto;
-  }
   .faq-list {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .accordion-label {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .accordion-container {
+    padding: 12px;
+    width: 100%;
+  }
+  .panel-p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
   }
 }
