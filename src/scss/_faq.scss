@@ -21,20 +21,21 @@
   justify-content: space-between;
 }
 
-.faq-t {
-  display: flex;
-  gap: 20px;
-}
+// .faq-t {
+//   display: flex;
+//   gap: 20px;
+// }
 
-.faq-c {
-  display: flex;
-  gap: 20px;
-}
+// .faq-c {
+//   display: flex;
+//   gap: 20px;
+// }
 
 /* Style for the accordion label (question) */
 .accordion-label {
   display: flex;
   width: 548px;
+  height: 84px;
   padding: 20px;
   justify-content: center;
   align-items: center;
@@ -44,6 +45,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  justify-content: space-between;
 }
 
 /* Hover effect for the accordion label */
@@ -64,9 +66,6 @@
 }
 
 .panel-text {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
   padding: 12px;
   justify-content: center;
   align-items: center;
@@ -81,4 +80,23 @@
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+  font-size: 18px;
+}
+
+/* Зміна напрямку стрілки при відкритті */
+.accordion-toggle:checked + .accordion-label .accordion-icon {
+  transform: rotate(180deg);
+}
+@media screen and (max-width: 375px) {
+  .accordion-label {
+    display: block;
+    width: 303px;
+  }
+  .faq {
+    margin: 0 auto;
+  }
 }

@@ -1,4 +1,15 @@
 .about {
+  @media screen and (min-width: 1200px) {
+    padding: 0 80px;
+    margin: 0 auto;
+
+    @media screen and (max-width: 375px) {
+      padding: 0 36px;
+      margin: 0 auto;
+    }
+  }
+}
+.about {
   margin-top: 114px;
 }
 .title-about {
@@ -40,4 +51,31 @@
   width: 508px;
   height: 172px;
   line-height: 1.2;
+}
+@media screen and (max-width: 375px) {
+  .about-p {
+    display: block;
+    // width: 548px;
+    // height: 364px;
+    // padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .p-text-about {
+    width: 271px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .p-text-about-p {
+    width: 271px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
