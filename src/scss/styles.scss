@@ -9,6 +9,7 @@
 @import './faq.scss';
 @import './game-features.scss';
 @import './footer.scss';
+@import './policy-cookies-common-styles.scss';
 
 :root {
   font-family: 'Open Sans', sans-serif;
@@ -16,7 +17,6 @@
   // line-height: 24px;
   font-weight: 400;
 
-  // color: #0000;
   background-color: $_main_bg_color;
 
   font-synthesis: none;
