@@ -7,7 +7,7 @@ screen types:
     desktop,
 */
 
-// clear code to the media mixin
+// clear code the media mixin
 @mixin media($_screen) {
   @if $_screen == mobile {
     @media screen and (min-width: $mobile) {

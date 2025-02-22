@@ -1,10 +1,14 @@
 @import './header.scss';
+@import './gallery.scss';
+@import './swiper.scss';
 @import './burger_menu.scss';
 @import './hero.scss';
+@import './features.scss';
 @import './about-game';
 @import './how-to-play';
 @import './faq.scss';
 @import './game-features.scss';
+@import './footer.scss';
 
 :root {
   font-family: 'Open Sans', sans-serif;
@@ -26,4 +30,8 @@
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 10px;
+}
+
+h2 {
+  margin-bottom: 40px;
 }
