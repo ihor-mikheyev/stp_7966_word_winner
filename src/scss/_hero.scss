@@ -41,17 +41,17 @@
 
 @media screen and (max-width: 375px) {
   .hero-title {
-    display: block;
+    display: flex;
     font-size: 32px;
+    flex-direction: column-reverse;
   }
   .hero-tit {
     font-size: 32px;
     line-height: normal;
     margin-bottom: 32px;
+    margin-top: 12px;
   }
-  .hero-icon {
-    width: 303px;
-  }
+
   .hero-container {
     padding: 0 36px;
     margin: 0 auto;
