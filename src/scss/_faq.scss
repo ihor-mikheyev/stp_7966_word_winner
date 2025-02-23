@@ -56,6 +56,7 @@
 .accordion-toggle:checked + .accordion-label .accordion-icon {
   transform: rotate(180deg);
 }
+
 @media screen and (max-width: 375px) {
   .faq-list {
     display: flex;
