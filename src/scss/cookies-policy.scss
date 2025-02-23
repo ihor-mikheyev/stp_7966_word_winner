@@ -1,0 +1,42 @@
+.cookies-text {
+  margin-bottom: 20px;
+}
+.cookies-li {
+  margin-bottom: 20px;
+}
+.cookie-word {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.cookie-wor {
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+article a {
+  color: #3e6dba;
+}
+.a-color {
+  color: black;
+}
+.wrapper {
+  padding-bottom: 208px;
+  margin-bottom: 52px;
+}
+.title-text {
+  margin-left: 71px;
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    padding-bottom: 20px;
+  }
+  .title-text {
+    margin-left: 0px;
+  }
+}
