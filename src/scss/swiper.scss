@@ -25,11 +25,20 @@
   margin-left: auto;
   margin-right: auto;
 }
+.swiper-buttons {
+}
 
-.swiper-button-next,
-.swiper-button-prev {
+div.swiper-button-next,
+div.swiper-button-prev {
   background-color: $_secondary_bg_color;
   width: 32px;
   height: 32px;
   border-radius: 50%;
+  position: absolute;
+}
+
+// Hide swiper navigation arrows
+div.swiper-button-next::after,
+div.swiper-button-prev::after {
+  display: none;
 }
