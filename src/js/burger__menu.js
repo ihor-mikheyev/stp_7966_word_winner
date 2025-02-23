@@ -1,4 +1,4 @@
-const burgerButton = document.querySelector('burger');
+const burgerButton = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 
 burgerButton.hidden = false;
