@@ -11,11 +11,15 @@
   font-weight: 400;
   line-height: normal;
   justify-content: space-between;
+  padding: 20px;
+  background: var(--Fon-for-text-Beige, #f4e5be);
+  border-radius: 10px;
 }
 .accordion-container {
-  padding: 20px;
   border-radius: 10px;
-  background: var(--Fon-for-text-Beige, #f4e5be);
+  // padding: 20px;
+
+  // background: var(--Fon-for-text-Beige, #f4e5be);
 }
 
 /* Style for the answer section */
@@ -40,6 +44,10 @@
 .accordion-toggle:checked + .accordion-label + .panel {
   display: block;
 }
+// .accordion-toggle1:checked + .accordion-label1 + .panel1 {
+//   display: block;
+// }
+
 .panel-p {
   font-size: 24px;
   font-style: normal;
@@ -50,6 +58,7 @@
 .accordion-icon {
   transition: transform 0.3s ease;
   font-size: 18px;
+  height: 20px;
 }
 
 /* Зміна напрямку стрілки при відкритті */
@@ -57,7 +66,7 @@
   transform: rotate(180deg);
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .faq-list {
     display: flex;
     flex-wrap: wrap;
