@@ -1,3 +1,4 @@
+
 #features {
   margin-bottom: 52px;
 }
@@ -9,6 +10,12 @@
     flex-wrap: wrap;
     gap: 24px;
   }
+.features {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 24px;
+
 }
 
 @include media(mobile) {
@@ -16,11 +23,13 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+    margin-bottom: 134px;
   }
 }
 
 .features-item {
   width: 100%;
+  // width: 303px;
   background-color: $_secondary_bg_color;
   border-radius: 10px;
   display: flex;
@@ -46,7 +55,8 @@
 
 @include media(mobile) {
   .features-item {
-    padding: 52px 32px 85px;
+    width: 358px;
+    padding: 52px 32px;
   }
 }
 .feature-image {
@@ -54,17 +64,31 @@
 }
 @include media(mobile) {
   .feature-image {
-    margin-bottom: 26px;
+    margin-bottom: 20px;
   }
 }
-
 .feature-title {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+
   line-height: 1.36;
   letter-spacing: 0%;
   text-align: center;
   margin-bottom: 4px;
+}
+.game-features-title {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+@include media(mobile) {
+  .feature-title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 134.375%; /* 43/32 */
+    margin-bottom: 4px;
+  }
 }
 
 @include media(mobile) {
@@ -75,11 +99,6 @@
   }
 }
 
-.feature-text {
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 135%; /* 27/20 */
-}
 @media screen and (max-width: 376px) {
   .feature-text {
     font-weight: 300;
@@ -88,4 +107,16 @@
     letter-spacing: 0%;
     text-align: center;
   }
+
+
+@include media(mobile) {
+  .feature-text {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 135%; /* 27/20 */
+  }
+}
+
+.text {
+
 }

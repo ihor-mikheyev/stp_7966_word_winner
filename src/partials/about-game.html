@@ -2,12 +2,29 @@
   <div class="about">
     <h2 class="title-about">About the game</h2>
     <div class="about-p">
-      <img
+      <picture>
+        <source
+          srcset="/img/about.png 1x, /img/about-desc-2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="/img/about-mob-1x.png 1x, /img/about-mob-2x.png 2x"
+          media="(max-width: 376px)"
+        />
+        <img
+          class="button-about"
+          src="/img/about.png"
+          alt="About the game"
+          width="548px"
+        />
+      </picture>
+      <!-- <img
         class="button-about"
         src="/img/about.png"
         alt="About the game"
         width="548px"
-      />
+      /> -->
+
       <div class="about-text">
         <p class="p-text-about">
           Word Winner: Search And Swipe is an addictive word puzzle game that
