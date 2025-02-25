@@ -10,6 +10,12 @@ h6 {
   line-height: 1.2;
 }
 
+.container-text-page {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .back-arrow {
   display: flex;
   align-items: center;
@@ -32,7 +38,7 @@ h6 {
 .content {
   background-color: $_secondary_bg_color;
   border-radius: 10px;
-  padding: 20px 0;
+  padding: 16px;
 }
 
 .content h3 {
