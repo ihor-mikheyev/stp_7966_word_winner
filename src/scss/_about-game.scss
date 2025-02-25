@@ -10,25 +10,30 @@
 }
 
 .about-text {
-  height: 374px;
-  width: 548px;
-  display: flex;
-  font-size: 24px;
-  font-weight: 400;
-  flex-shrink: 0;
+  background: var(--Fon-for-text-Beige, #f4e5be);
+  border-radius: 10px;
+  padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-radius: 10px;
-  padding: 16px;
-  justify-content: space-around;
-  background: var(--Fon-for-text-Beige, #f4e5be);
 }
-.about-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+
+@media screen and (min-width: 1200px) {
+  .about-text p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  .about-p {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: center;
+    // align-items: center;
+    // gap: 24px;
+  }
 }
 .p-text-about {
   font-size: 24px;
@@ -38,42 +43,35 @@
 .p-text-about-p {
   line-height: 1.2;
 }
-@media screen and (max-width: 376px) {
-  .about-p {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-  }
 
-  .p-text-about {
-    width: 100%;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
+// .about-p {
+//   display: block;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 24px;
+// }
 
-  .p-text-about-p {
-    width: 100%;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .about-text {
-    gap: 16px;
-    width: 100%;
-    height: 293px;
-    margin-top: 12px;
-  }
-  .title-about {
-    font-size: 32px;
-    margin-top: 20px;
-  }
-  .about {
-    margin-top: 52px;
-  }
+.p-text-about {
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.p-text-about-p {
+  width: 100%;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.title-about {
+  font-size: 32px;
+  margin-top: 20px;
+}
+.about {
+  margin-top: 52px;
 }
 // @include media(mobile) {
 //   .about {

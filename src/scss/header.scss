@@ -12,8 +12,7 @@
   padding: 20px 20px;
   border-radius: 10px;
 }
-
-@include media(mobile) {
+@media screen and (min-width: 1200px) {
   .header-wrapper {
     background-color: inherit;
     display: flex;
@@ -27,7 +26,7 @@
   display: none;
 }
 
-@include media(mobile) {
+@media screen and (min-width: 1200px) {
   .nav-list {
     display: flex;
     flex-wrap: wrap;
@@ -37,6 +36,10 @@
     background-color: $_secondary_bg_color;
     padding: 10.5px 42.5px;
     border-radius: 10px;
+  }
+
+  .nav-link {
+    font-size: 20px;
   }
 }
 
