@@ -1,3 +1,7 @@
+.faq {
+  margin-top: 140px;
+  margin-bottom: 140px;
+}
 .faq-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -17,9 +21,6 @@
 }
 .accordion-container {
   border-radius: 10px;
-  // padding: 20px;
-
-  // background: var(--Fon-for-text-Beige, #f4e5be);
 }
 
 /* Style for the answer section */
@@ -44,9 +45,6 @@
 .accordion-toggle:checked + .accordion-label + .panel {
   display: block;
 }
-// .accordion-toggle1:checked + .accordion-label1 + .panel1 {
-//   display: block;
-// }
 
 .panel-p {
   font-size: 24px;
@@ -67,9 +65,14 @@
 }
 
 @media screen and (max-width: 376px) {
+  .faq {
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
   .faq-list {
     display: flex;
     flex-wrap: wrap;
+    gap: 16px;
   }
   .accordion-label {
     font-size: 16px;
@@ -78,7 +81,6 @@
     line-height: normal;
   }
   .accordion-container {
-    padding: 12px;
     width: 100%;
   }
   .panel-p {
@@ -86,5 +88,8 @@
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+  }
+  .title-faq {
+    font-size: 32px;
   }
 }
