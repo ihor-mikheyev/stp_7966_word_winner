@@ -1,14 +1,14 @@
-.hero-container {
-  @media screen and (min-width: 1200px) {
-    padding: 0 80px;
-    margin: 0 auto;
+// .hero-container {
+//   @media screen and (min-width: 1200px) {
+//     padding: 0 80px;
+//     margin: 0 auto;
 
-    @media screen and (max-width: 375px) {
-      padding: 0 36px;
-      margin: 0 auto;
-    }
-  }
-}
+//     @media screen and (max-width: 375px) {
+//       padding: 0 36px;
+//       margin: 0 auto;
+//     }
+//   }
+// }
 
 .hero-title {
   display: flex;
@@ -58,8 +58,8 @@
     margin-top: 12px;
   }
 
-  .hero-container {
-    padding: 0 36px;
-    margin: 0 auto;
-  }
+  // .hero-container {
+  //   padding: 0 36px;
+  //   margin: 0 auto;
+  // }
 }
