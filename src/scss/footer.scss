@@ -18,34 +18,36 @@
   // }
 }
 
-.footer-list {
-  display: flex;
-  justify-content: center;
-  gap: 12px;
-  font-size: 13px;
-  line-height: 1.2;
-  letter-spacing: 0.4%;
-  margin-bottom: 14px;
-}
-
 .footer-text {
   font-size: 11px;
-  line-height: 1.36;
   letter-spacing: 1.5%;
+  line-height: 1.36;
 }
 
-@include media(mobile) {
-  .footer-list {
-    gap: 40px;
-    font-size: 20px;
-    margin-bottom: 18px;
-  }
-
+@media screen and (min-width: 1200px) {
   .footer-text {
     font-size: 16px;
     line-height: 1.36;
   }
 }
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-list {
+    gap: 40px;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.4%;
+    margin-bottom: 18px;
+  }
+}
+
 .footer-link:hover {
   color: $_header_accent_color;
 }

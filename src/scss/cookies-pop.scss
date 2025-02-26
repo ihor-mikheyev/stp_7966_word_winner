@@ -43,10 +43,12 @@
   }
 }
 
-.cookies-content > p {
-  font-size: 24px;
-  font-weight: 300;
-  margin-bottom: 32px;
+@media screen and (min-width: 1200px) {
+  .cookies-content > p {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 32px;
+  }
 }
 
 .cookies-buttons {
@@ -76,6 +78,4 @@
 
 .cookies-accept {
   background-color: $_main_bg_color;
-}
-.cookies-decline {
 }

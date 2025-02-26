@@ -1,57 +1,78 @@
-// .container-how-to-play {
-//   @media screen and (max-width: 376px) {
-//     padding: 0 36px;
-//     margin: 0 auto;
-//   }
-// }
-
 .how-to-play {
-  margin-top: 140px;
-  margin-bottom: 140px;
+  margin-top: 49px;
+  margin-bottom: 66px;
 }
+
+@media screen and (min-width: 1200px) {
+  .how-to-play {
+    margin-top: 140px;
+    margin-bottom: 140px;
+  }
+}
+
 .title-how-to-play {
   font-family: Fredoka;
   font-size: 40px;
   font-weight: 600px;
   margin-bottom: 40px;
 }
-
-@media screen and (min-width: 1200px) {
-  .how-to-play-p {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-  }
-  .how-to-play-text {
-    padding: 40px 60px;
-    border-radius: 10px;
-    background-color: var(--Fon-for-text-Beige, #f4e5be);
-    list-style-type: disc;
-  }
-
-  .how-to-play-text p {
-    font-size: 24px;
-    font-weight: 400;
-  }
+.how-to-play-p {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  gap: 12px;
 }
 
+// .how-to-play-text p {
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 400;
+//   display: flex;
+//   flex-direction: row;
+//   gap: 16px;
+// }
 .how-to-play-text {
   background-color: var(--Fon-for-text-Beige, #f4e5be);
   border-radius: 10px;
   margin-bottom: 12px;
-}
-.how-to-play-text p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  padding: 16px 16px 16px 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style-type: disc;
 }
 
-.how-to-play {
-  margin-top: 49px;
-  margin-bottom: 52px;
-}
 .title-how-to-play {
   font-size: 32px;
   font-weight: 600;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .title-how-to-play {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 40px;
+  }
+  .how-to-play-p {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  .how-to-play-text {
+    padding: 40px 60px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+  }
+
+  // .how-to-play-text p {
+  //   font-size: 24px;
+  // }
 }

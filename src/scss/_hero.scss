@@ -16,11 +16,21 @@
 }
 
 .hero-tit {
-  font-family: Fredoka;
-  font-size: 80px;
-  letter-spacing: 0.03em;
-  margin-bottom: 110px;
-  line-height: 80px;
+  margin-bottom: 32px;
+  margin-top: 24px;
+  font-size: 32px;
+
+  font-weight: 600;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-tit {
+    font-family: Fredoka;
+    font-size: 80px;
+    letter-spacing: 0.03em;
+    margin-bottom: 110px;
+    line-height: 80px;
+  }
 }
 
 .hero {

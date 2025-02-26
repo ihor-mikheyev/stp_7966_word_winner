@@ -1,27 +1,64 @@
 .faq {
+  margin-top: 52px;
   margin-bottom: 52px;
 }
+.title-faq {
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
+@media screen and (min-width: 1200px) {
+  .title-faq {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
 
 .faq-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1200px) {
+  .faq-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
 .accordion-label {
   display: flex;
-  font-size: 32px;
+  justify-content: space-between;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  justify-content: space-between;
-  padding: 20px;
   background: var(--Fon-for-text-Beige, #f4e5be);
   border-radius: 10px;
+  padding: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .accordion-label {
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .accordion-container {
-  border-radius: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .accordion-container {
+    border-radius: 10px;
+  }
 }
 
 /* Style for the answer section */
@@ -33,7 +70,7 @@
   border-radius: 5px;
   overflow: hidden;
   width: 100%;
-  background: #f4e5be;
+  background: #b4927b;
 }
 
 .panel-text {
@@ -46,12 +83,19 @@
 .accordion-toggle:checked + .accordion-label + .panel {
   display: block;
 }
-
 .panel-p {
-  font-size: 24px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+}
+@media screen and (min-width: 1200px) {
+  .panel-p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
 
 .accordion-icon {
@@ -63,34 +107,4 @@
 /* Зміна напрямку стрілки при відкритті */
 .accordion-toggle:checked + .accordion-label .accordion-icon {
   transform: rotate(180deg);
-}
-
-@media screen and (max-width: 376px) {
-  .faq {
-    margin-top: 52px;
-    margin-bottom: 52px;
-  }
-  .faq-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-  .accordion-label {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  }
-  .accordion-container {
-    width: 100%;
-  }
-  .panel-p {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-  }
-  .title-faq {
-    font-size: 32px;
-  }
 }

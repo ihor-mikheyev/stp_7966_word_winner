@@ -19,10 +19,12 @@
 }
 article a {
   color: #3e6dba;
+  word-break: break-word; /* Переносить довгі слова на наступний рядок */
 }
 .a-color {
   color: black;
 }
+
 .wrapper {
   // padding-bottom: 208px;
   margin-bottom: 52px;
